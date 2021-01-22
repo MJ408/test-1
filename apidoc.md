@@ -16,7 +16,7 @@ https://www.adhooah.com/aff/api/v2/mycampaigns?pid=<API_KEY>
 ```
 {"return": result code, "campaigns":[list]}
 ```
-- result code
+* result code
 
 |Result Code | Description                      |
 |----------------|-------------------------------|
@@ -25,7 +25,7 @@ https://www.adhooah.com/aff/api/v2/mycampaigns?pid=<API_KEY>
 |4| Wrong API KEY|
 |9| System Error|
 
-- campaigns [list]
+* campaigns [list]
 
  | Column           | Description                                                 |
 |------------------|---------------------------------------------------------------
@@ -50,15 +50,15 @@ https://www.adhooah.com/aff/api/v2/mycampaigns?pid=<API_KEY>
 | creatives        | [list] {dimen, url}          |
 
 
-- example
+* example
   
 (example)
 
-*request
+* request
 ```
 https://www.adhooah.com/aff/api/v2/mycampaigns?pid=1ab17f073f4ffd28f8646a784e3a36e5
 ```
-*output
+* output
 ```json
 {
    "return":0,
@@ -163,12 +163,12 @@ https://www.adhooah.com/aff/api/v2/mycampaigns?pid=1ab17f073f4ffd28f8646a784e3a3
 ```
 https://www.adhooah.com/aff/api/v2/approvalrequest?pid=<API_KEY>&campaign_id=<CAMPAIGN_ID>
 ```
-- <API_KEY> : Your API Key.
+* <API_KEY> : Your API Key.
 
-- <CAMPAIGN_ID > : campaign id
+* <CAMPAIGN_ID > : campaign id
 
   
-- {"return": result code}
+* {"return": result code}
 
 |Result Code | Descripition                      |
 |----------------|-------------------------------|
@@ -182,7 +182,7 @@ https://www.adhooah.com/aff/api/v2/approvalrequest?pid=<API_KEY>&campaign_id=<CA
 ```
 https://www.adhooah.com/aff/api/v2/approvalrequest?pid=7c9704d674ec0156782e123e92c3d2a3&campaign_id=20625
 ```
-*output
+* output
 ```
 {"return": 0}
 ```
@@ -232,7 +232,7 @@ https://api.adhooah.com/aff/api.click.main?campn_id=22479&pub_id=575360&click_id
 ```
 http://YOUR_POSTBACK_URL?click_id={click_id}&sub_id={sub_id}&device_id={adid_or_ifa}&ip={ipaddr}
 ```
-*your event postback url (optional)
+* your event postback url (optional)
 ```
 http://YOUR_EVENT_POSTBACK_URL?click_id={click_id}&sub_id={sub_id}&device_id={adid_or_ifa}&ip={ipaddr}&event={event_nm}
 ```
