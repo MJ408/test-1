@@ -1,4 +1,4 @@
-# 목차
+# INDEX
 
 1.Campaign List
   * 1.1 get available campaigns
