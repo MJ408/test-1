@@ -1,20 +1,20 @@
 # 1.Campaign List
 
 ###  1.1 get available campaigns
-
-    https://www.adhooah.com/aff/api/v2/availablecampaigns?pid=<API_KEY>
-
+```
+https://www.adhooah.com/aff/api/v2/availablecampaigns?pid=<API_KEY>
+```
 - <API_KEY> : Your API Key.
 
 ###  1.2 get my live campaigns
 ```
-    https://www.adhooah.com/aff/api/v2/mycampaigns?pid=<API_KEY>
+https://www.adhooah.com/aff/api/v2/mycampaigns?pid=<API_KEY>
 ```
 - <API_KEY> : Your API Key. 
 
 ### 1.3 json result
 ```
-    - {"return": result code, "campaigns":[list]}
+{"return": result code, "campaigns":[list]}
 ```
 - result code
 
@@ -56,7 +56,7 @@
 
 *request
 ```
-    https://www.adhooah.com/aff/api/v2/mycampaigns?pid=1ab17f073f4ffd28f8646a784e3a36e5
+https://www.adhooah.com/aff/api/v2/mycampaigns?pid=1ab17f073f4ffd28f8646a784e3a36e5
 ```
 *output
 ```
@@ -65,7 +65,7 @@
 
 ### 1.4 campaign approval request
 ```
-    https://www.adhooah.com/aff/api/v2/approvalrequest?pid=<API_KEY>&campaign_id=<CAMPAIGN_ID>
+https://www.adhooah.com/aff/api/v2/approvalrequest?pid=<API_KEY>&campaign_id=<CAMPAIGN_ID>
 ```
 - <API_KEY> : Your API Key.
 
@@ -84,12 +84,12 @@
 
 (example)
 ```
-    https://www.adhooah.com/aff/api/v2/approvalrequest?pid=7c9704d674ec0156782e123e92c3d2a3&campaign_id=20625
+https://www.adhooah.com/aff/api/v2/approvalrequest?pid=7c9704d674ec0156782e123e92c3d2a3&campaign_id=20625
 ```
 *output
-
-    {"return": 0}
-
+```
+{"return": 0}
+```
 
 # 2. Postback
 ### 2.1 Postback macro
@@ -130,15 +130,15 @@ You should send the following value to your campaign URL:
 
 * campaign url
 ```
-      https://api.adhooah.com/aff/api.click.main?campn_id=22479&pub_id=575360&click_id={click_id}&sub_id={sub_aff}&adid={GAID}&idfa={IOS_IDFA}
+https://api.adhooah.com/aff/api.click.main?campn_id=22479&pub_id=575360&click_id={click_id}&sub_id={sub_aff}&adid={GAID}&idfa={IOS_IDFA}
 ```
 * your install postback url
 ```
-    http://YOUR_POSTBACK_URL?click_id={click_id}&sub_id={sub_id}&device_id={adid_or_ifa}&ip={ipaddr}
+http://YOUR_POSTBACK_URL?click_id={click_id}&sub_id={sub_id}&device_id={adid_or_ifa}&ip={ipaddr}
 ```
 *your event postback url (optional)
 ```
-    http://YOUR_EVENT_POSTBACK_URL?click_id={click_id}&sub_id={sub_id}&device_id={adid_or_ifa}&ip={ipaddr}&event={event_nm}
+http://YOUR_EVENT_POSTBACK_URL?click_id={click_id}&sub_id={sub_id}&device_id={adid_or_ifa}&ip={ipaddr}&event={event_nm}
 ```
   
   
