@@ -1,3 +1,17 @@
+# 목차
+
+1.Campaign List
+  * 1.1 get available campaigns
+  * 1.2 get my live campaigns
+  * 1.3 json result
+  * 1.4 campaign approval request
+
+2. Postback
+  * 2.1 Postback macro
+  * 2.2 install/event postback url
+- - - 
+
+
 # 1.Campaign List
 
 ###  1.1 get available campaigns
