@@ -1,4 +1,4 @@
 
 ## Hello World
-theme: THEME-NAME
+theme: minima
 remote_theme: THEME-NAME
